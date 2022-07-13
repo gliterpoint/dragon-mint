@@ -27,7 +27,7 @@ import Img14 from "../static/14.png";
 import Img15 from "../static/15.png";
 import CloseIcon from "../static/Close-icon.png";
 
-import Opensea from "../static/OpenSea.png";
+import Opensea from "../static/opensea.png";
 import Twitter from "../static/Twitter.png";
 import Discord from "../static/Discord.png";
 
