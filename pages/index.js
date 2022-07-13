@@ -238,17 +238,23 @@ export default function Home() {
 			</main>
 
 			<div className={styles.footerContainer}>
-				<div className={styles.socialLinks}>
-					<Link href="/">
-						<Image src={Opensea} alt="opensea" />
-					</Link>
-					<Link href="/">
-						<Image src={Twitter} alt="twitter" />
-					</Link>
-					<Link href="/">
-						<Image src={Discord} alt="discord" />
-					</Link>
-				</div>
+				<ul className={styles.socialLinks}>
+					<li>
+						<Link href="/">
+							<Image src={Opensea} alt="opensea" />
+						</Link>
+					</li>
+					<li>
+						<Link href="/">
+							<Image src={Twitter} alt="twitter" />
+						</Link>
+					</li>
+					<li>
+						<Link href="/">
+							<Image src={Discord} alt="discord" />
+						</Link>
+					</li>
+				</ul>
 			</div>
 			{showModal ? (
 				<div

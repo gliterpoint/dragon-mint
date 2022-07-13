@@ -173,8 +173,12 @@
 	justify-content: center;
 	padding: 50px 0px;
 	.socialLinks {
-		a {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		li {
 			margin: 0px 1.5rem;
+			cursor: pointer;
 		}
 	}
 }
