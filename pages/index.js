@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 
 //Components
@@ -86,9 +87,9 @@ export default function Home() {
 				</div>
 				{/* Logo wrapper  */}
 				<div className={styles.siteLogoWrap}>
-					<a href="/">
-						<Image src={Logo} alt="Site Name" />
-					</a>
+					<Link href="/">
+						<Image src={Logo} alt="SiteName" />
+					</Link>
 				</div>
 				{/* connect wallet wrapper */}
 				<div className={styles.connectWalletWrap}>
@@ -132,77 +133,77 @@ export default function Home() {
 						>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img1} />
+									<Image src={Img1} alt="Img1" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img2} />
+									<Image src={Img2} alt="Img2" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img3} />
+									<Image src={Img3} alt="Img3" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img4} />
+									<Image src={Img4} alt="Img4" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img5} />
+									<Image src={Img5} alt="Img5" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img6} />
+									<Image src={Img6} alt="Img6" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img7} />
+									<Image src={Img7} alt="Img7" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img8} />
+									<Image src={Img8} alt="Img8" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img9} />
+									<Image src={Img9} alt="Img9" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img10} />
+									<Image src={Img10} alt="Img10" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img11} />
+									<Image src={Img11} alt="Img11" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img12} />
+									<Image src={Img12} alt="Img12" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img13} />
+									<Image src={Img13} alt="Img13" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img14} />
+									<Image src={Img14} alt="Img14" />
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<div className={styles.imgSlide}>
-									<Image src={Img15} />
+									<Image src={Img15} alt="Img15" />
 								</div>
 							</SwiperSlide>
 						</Swiper>
@@ -238,15 +239,15 @@ export default function Home() {
 
 			<div className={styles.footerContainer}>
 				<div className={styles.socialLinks}>
-					<a href="/">
-						<Image src={Opensea} alt="social" />
-					</a>
-					<a href="/">
-						<Image src={Twitter} alt="social" />
-					</a>
-					<a href="/">
-						<Image src={Discord} alt="social" />
-					</a>
+					<Link href="/">
+						<Image src={Opensea} alt="opensea" />
+					</Link>
+					<Link href="/">
+						<Image src={Twitter} alt="twitter" />
+					</Link>
+					<Link href="/">
+						<Image src={Discord} alt="discord" />
+					</Link>
 				</div>
 			</div>
 			{showModal ? (
@@ -264,7 +265,7 @@ export default function Home() {
 									setShowModal(!showModal);
 								}}
 							>
-								<Image src={CloseIcon} alr="close" />
+								<Image src={CloseIcon} alt="close" />
 							</div>
 						</div>
 
