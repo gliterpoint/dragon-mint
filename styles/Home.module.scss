@@ -76,9 +76,6 @@
 	margin: 0 auto;
 	border: 1px solid #fbedd6;
 	border-radius: 8px;
-	.imgSlide {
-		cursor: grab;
-	}
 }
 .amountpriceWrap {
 	display: flex;
@@ -106,6 +103,8 @@
 				line-height: 1.5;
 				cursor: pointer;
 				font-size: 20px;
+				background: #fbedd6;
+				border-radius: 4px;
 				&:first-child {
 					margin-right: 8px;
 				}
@@ -265,6 +264,12 @@
 	}
 }
 @media (max-width: 480px) {
+	.mainContainer {
+		background-color: #0e141b;
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 	.header {
 		padding: 2rem 0px 4rem 0px;
 		h3 {

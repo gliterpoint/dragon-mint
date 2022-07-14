@@ -6,25 +6,12 @@ import styles from "../styles/Home.module.scss";
 
 //Components
 import Accordion from "../components/FAQ/FAQ";
+import AutoSlider from "../components/slider/slider";
 
 // Images
 import GetHelpIcon from "../static/Question-icon.png";
 import Logo from "../static/main-logo.png";
-import Img1 from "../static/01.png";
-import Img2 from "../static/02.png";
-import Img3 from "../static/03.png";
-import Img4 from "../static/04.png";
-import Img5 from "../static/05.png";
-import Img6 from "../static/06.png";
-import Img7 from "../static/07.png";
-import Img8 from "../static/08.png";
-import Img9 from "../static/09.png";
-import Img10 from "../static/10.png";
-import Img11 from "../static/11.png";
-import Img12 from "../static/12.png";
-import Img13 from "../static/13.png";
-import Img14 from "../static/14.png";
-import Img15 from "../static/15.png";
+
 import CloseIcon from "../static/Close-icon.png";
 
 import Opensea from "../static/opensea.png";
@@ -33,10 +20,11 @@ import Discord from "../static/Discord.png";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import { FreeMode, Autoplay } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/free-mode";
 import "swiper/css/autoplay";
 
 export default function Home() {
@@ -110,11 +98,16 @@ export default function Home() {
 			<main>
 				<div className={styles.mintContainer}>
 					<div className={styles.sliderContainer}>
-						<Swiper
+						<AutoSlider />
+						{/* <Swiper
 							loop={true}
+							grabCursor={true}
 							spaceBetween={30}
 							slidesPerView={3}
-							autoplay={{ delay: 3000, disableOnInteraction: false }}
+							autoplay={{ delay: 1, disableOnInteraction: false }}
+							speed={2000}
+							freeMode={true}
+							freeModeMomentum={false}
 							modules={[Autoplay]}
 							breakpoints={{
 								320: {
@@ -206,7 +199,7 @@ export default function Home() {
 									<Image src={Img15} alt="Img15" />
 								</div>
 							</SwiperSlide>
-						</Swiper>
+						</Swiper> */}
 					</div>
 					<div className={styles.amountpriceWrap}>
 						<div className={styles.amount}>
